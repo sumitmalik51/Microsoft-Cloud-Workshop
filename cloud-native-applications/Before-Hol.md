@@ -57,14 +57,14 @@ single node.js site into a website with a content API that serves up the speaker
 2. Navigate to FabMedical source code folder and list the contents.
 
    ```bash
-   cd ~/MCW-Cloud-native-applications/Hands-on\ lab/lab-files/developer/
+   cd MCW-Cloud-native-applications/Hands-on/lab/lab-files/developer/
    ll
    ```
 
    > **Important note**: If you will be taking the Infrastructure edition of the lab, instead of using the above instructions, type the following ones:
    >
    > ```bash
-   > cd ~/MCW-Cloud-native-applications/Hands-on\ lab/lab-files/infrastructure/
+   > cd MCW-Cloud-native-applications/Hands-on\ lab/lab-files/infrastructure/
    > ll
    > ```
    >
@@ -98,33 +98,26 @@ single node.js site into a website with a content API that serves up the speaker
 
    If this is your first time logging into this account you will be taken through a first-run experience:
 
-   - Confirm your contact information and select next.
-   - Select "Create new account".
-   - Enter a fabmedical-SUFFIX for your account name and select Continue.
+   - CLick on **Start Free** button.
+   - Select you nearest location of your Resource Group and click on continue.
 
 7. Create Azure DevOps Project.
 
    - Enter fabmedical as the project name.
    - Ensure the project is Private.
-   - Choose the Advanced dropdown.
+   - Choose the Advanced dropdown. (Refresh the page if you are not able to see the advance option)
    - Ensure the Version control is set to Git.
    - Select the "Create Project" button.
 
    ![Create Project Dialog with an arrow pointing at the Create Project button](media/b4-image51.png)
 
-8. Enable multi-stage pipelines:
-
-   - Select your user icon in the top right corner.
-   - Then choose the three dots to access the "Preview Features" menu item.
-   - Toggle multi-stage pipelines to "On".
-
 9. Next add an Azure Service Connection to your Azure DevOps account. Select the
    Project settings gear icon to access your settings. Then select Service Connections.
 
 10. Choose "+ Create service connection". Then pick "Azure Resource Manager" from
-    the menu.
+    the menu and click on Next button.
 
-    ![A screenshot of the New service connection selection in Azure DevOps with Azure Resource Manager highlighted.](media/create.png)
+    ![A screenshot of the New service connection selection in Azure DevOps with Azure Resource Manager highlighted.](media/1.png)
 
 11. Select "Services principal (manual)". Then select Next indicated in the screenshot.
 
@@ -141,9 +134,9 @@ single node.js site into a website with a content API that serves up the speaker
     - **Service Principal Key**: `password` from service principal output.
     - **Tenant ID**: `tenant` from service principal output.
 
-    ![A screenshot of the Add Resource Manager Add Service Endpoint dialog.](media/Ex1-Task7.16.png)
+    ![A screenshot of the Add Resource Manager Add Service Endpoint dialog.](media/2.png)
 
-13. Select "Verify connection" then select "OK".
+13. Select "Verify", Enter Service connection name as **Fabmedical** then Select Verify and save.
 
     > **Note**: If the connection does not verify, then recheck and reenter the required data.
 
